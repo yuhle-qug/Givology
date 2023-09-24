@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+
+/* Header section Trang chủ */
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: rgba(87, 163, 65, 255);
+    padding: 15px;
+    border-bottom: 1px solid black;
+    z-index: 1;
+    width: 100%;
+    position: static;
+}
+
+.topnav a {
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    top: 30px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.topnav a:hover {
+    color: white;
+    border: 2px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 15px;
+    margin-left: -4px;
+    /*transition-duration: 0.3s;*/
+    text-decoration: none;
+}
+
+.topnav a.active {
+    color: white;
+    border: 2px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 15px;
+}
+
+.topnav .search-container {
+    float: right;
+    white-space: nowrap;
+    margin-top: 30px;
+    position: relative;
+}
+
+.topnav input[type="text"] {
+    padding: 4px;
+    border-color: white;
+    border-radius: 15px;
+    font-size: 15px;
+    font-family: Raleway;
+}
+
+.topnav .search-container button {
+    float: left;
+    margin-top: 3px;
+    background: black;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 100%;
+}
+
+
+/* End Header Trang Chủ */
+
+
+/*Body của shop*/
+
+body {
+    background-image: url('../Asset/shop-background.png');
+    box-sizing: border-box;
+    background-position: center-center;
+    background-size: cover;
+    color: black;
+}
+
+
+/*CSS cho card*/
+
+.container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 200px;
+    margin-bottom: 200px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #1b3e60;
+    width: 240px;
+    height: 300px;
+    margin: 35px;
+    box-shadow: 4px 5px 5px #888888;
+}
+
+.card-image {
+    height: 230px;
+    margin-bottom: 10px;
+    background-size: cover;
+}
+
+.car-1 {
+    background-image: url('../Asset/img1.jpg');
+}
+
+.car-2 {
+    background-image: url('../Asset/img1.jpg');
+}
+
+.car-3 {
+    background-image: url('../Asset/img1.jpg');
+}
+
+.card:hover {
+    background-color: rgba(255, 0, 0, 0.5);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.08);
+    transition: all 0.5s ease-out;
+}
+
+.card>h2,
+p {
+    color: white;
+}
+
+.card>h2 {
+    font-family: Playfair-Display;
+    margin: 0px 10px 5px;
+    font-weight: 545;
+    font-size: 25px;
+}
+
+.card>p {
+    font-family: Raleway;
+    margin: 0px 10px 5px;
+    opacity: 0.8;
+}
+
+.buy-button {
+    color: white;
+    border: 1px solid white;
+    border-radius: 13px;
+    position: relative;
+    top: -45px;
+    left: 150px;
+    font-size: 18px;
+    background-color: #1b3e60;
+    opacity: 0.8;
+    width: 80px;
+    font-family: Raleway;
+    font-weight: lighter;
+}
+
+.buy-button:hover {
+    opacity: 1;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border: 0.2px solid black;
+}
+
+.carousel__nav {
+    position: absolute;
+    top: 400px;
+    text-align: center;
+}
+
+.indicator {
+    border: none;
+    margin: 5px;
+    font-size: 10px;
+    opacity: 0.4;
+    padding: 0;
+}
+
+.indicator[data-active] {
+    opacity: 1;
+    color: #1b3e60;
+}
+
+
+/* Footer Trang Chủ */
+
+footer {
+    display: block;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 255);
+    margin-top: 500px;
+}
+
+footer h3 {
+    font-size: 30px;
+    text-align: center;
+    margin-right: 100px;
+    font-family: Playfair-Display;
+}
+
+footer p {
+    color: rgba(144, 144, 144, 255);
+    font-size: 20px;
+}
+
+.threecolumn {
+    float: left;
+    width: 33.33%;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.threerow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.social-icon {
+    margin-top: 20px;
+    display: flex;
+    margin-left: 240px;
+}
+
+.social-icon li {
+    list-style: none;
+}
+
+.social-icon li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.social-icon li a:hover {
+    background: #f00;
+}
+
+.social-icon li a .fa {
+    color: #fff;
+    font-size: 20px;
+}
+
+#link li {
+    list-style-type: none;
+    margin-left: 50px;
+    padding: 20px;
+    display: block;
+    text-align: left;
+    font-size: 22px;
+    margin-top: -20px;
+}
+
+#link a:link {
+    color: rgba(144, 144, 144, 255);
+    text-decoration: none;
+}
+
+#link a:visited {
+    color: rgba(144, 144, 144, 255);
+}
+
+#link a:hover {
+    color: rgba(144, 144, 144, 255);
+}
+
+#link a:active {
+    color: rgba(144, 144, 144, 255);
+}
+
+.info li {
+    color: rgba(144, 144, 144, 255);
+    list-style-type: none;
+    padding: 30px;
+    margin-left: -30px;
+    display: block;
+    text-align: left;
+    font-size: 20px;
+}
+
+#email a:link {
+    color: rgba(144, 144, 144, 255);
+    text-decoration: none;
+}
+
+#email a:visited {
+    color: rgba(144, 144, 144, 255);
+}
+
+#email a:hover {
+    color: rgba(144, 144, 144, 255);
+}
+
+#email a:active {
+    color: rgba(144, 144, 144, 255);
+}
+
+
+/* End Footer Trang Chủ */

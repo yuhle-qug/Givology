@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+/* Background */
+.bg {
+  /* The image used */
+  background-image:url(Asset/GIOI%20THIEU.png);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+/* Header section Trang chủ */
+
+.topnav {
+    overflow: hidden;
+    width: 100%;
+    margin-left: 400px;
+    margin-bottom: -40px
+}
+
+.topnav table {
+    border-spacing: 30px 20px;;
+    border-bottom: 1px solid black;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+}
+
+.topnav a:hover  {
+    color: white;
+    border: 2px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 15px; 
+    margin-left:-4px;
+    text-decoration: none;
+}
+
+.topnav a.active {
+    color: white;
+    border: 2px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 15px; 
+}
+
+.topnav .search-container {
+    float: left;
+    white-space: nowrap;
+    position: relative;
+}
+
+.topnav input[type="text"] {
+    padding: 4px; 
+    border-color: white;
+    border-radius: 15px;
+    font-size: 15px;
+    font-family: Raleway;
+}
+
+.topnav .search-container button {
+    float: left;
+    margin-top: 3px;
+    background: black;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 100%;
+}
+
+/* End Header Trang Chủ */
+
+/* Body Trang Chủ */
+body {
+    /*background-image: url(Asset/GIOI%20THIEU.png);
+	background-size:100%;
+	background-repeat:no-repeat;*/
+    box-sizing: border-box;
+}
+main .row{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	margin-bottom:150px;
+	position:relative;
+	top:100px;
+}
+main .column{
+	padding:20px;
+	text-align:justify;
+	color:white;
+	font-family:'Raleway', sans-serif;
+	position:relative;
+	background-color:rgba(87,163,65,255);
+	height:580px;
+	margin:40px;
+	border-radius:20px;
+	border-style:outset;
+	width:400px;
+}
+	
+/*.column h2{
+	text-align:center;
+	border-color:white;
+	border-radius:20px;
+	border-style:solid;
+	border-width:3px;
+	font-weight:400;
+	margin-bottom:30px;
+	padding:5px;
+	font-size:25px;
+	
+}*/
+.headtag h2{
+	position:absolute;
+	text-align:center;
+	top:5px;
+	border-color:white;
+	border-radius:30px;
+	border-style:solid;
+	border-width:3px;
+	padding: 10px;
+	font-size:25px;
+	right:30%;
+	left:30%;
+}
+#longtag{
+	position: absolute;
+	right:-48%;
+	left:-48%;
+	top:5px;
+}
+.column p{
+	font-style:italic;
+	line-height:1.6;
+	position:relative;
+	top:80px;
+	padding:10px;
+}
+/* End Body Trang. Chủ */
+
+/* Footer Trang Chủ */
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: rgba(0,0,0,255);
+}
+
+footer h3 {
+    font-size:25px; 
+    text-align: left; 
+    font-family: Playfair-Display;
+    margin-left: 35px;
+}
+
+footer p {
+    color: rgba(144,144,144,255);
+    font-size: 20px;
+    text-align: left;
+}
+
+.threecolumn {
+    float: left;
+    width: 33.33%;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.threerow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.social-icon {
+    margin-top: 20px;
+    display: flex;
+    margin-left: 150px;
+}
+
+.social-icon li {
+    list-style: none;
+}
+
+.social-icon li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.social-icon li a:hover {
+    background: #f00;
+}
+.social-icon li a .fa {
+    color: #fff;
+    font-size: 20px;
+}
+
+#link li {
+    list-style-type: none;
+    padding: 10px;
+    display: block;
+    text-align: left;
+    font-size: 20px;
+}
+
+#link a:link {
+    color: rgba(144,144,144,255);
+    text-decoration: none;
+}
+
+#link a:visited {
+    color: rgba(144,144,144,255);
+}
+
+#link a:hover {
+    color: rgba(144,144,144,255);
+}
+
+#link a:active {
+    color: rgba(144,144,144,255);
+}
+
+.info li {
+    color: rgba(144,144,144,255);
+    list-style-type: none;
+    padding: 30px;
+    margin-left: -30px;
+    display: block;
+    text-align: left;
+    font-size: 20px;
+}
+
+#email a:link {
+    color: rgba(144,144,144,255);
+    text-decoration: none;
+}
+
+#email a:visited {
+    color: rgba(144,144,144,255);
+}
+
+#email a:hover {
+    color: rgba(144,144,144,255);
+}
+
+#email a:active {
+    color: rgba(144,144,144,255);
+}

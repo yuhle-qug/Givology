@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <title>Givology NKTP Hải Phòng</title>
+    <link rel="icon" type="image/x-icon" href="Asset/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Givology, Givology NKTP Hải Phòng, Giv">
+    <meta name="description" content="Givology NKTP Hải Phòng">
+    <meta name="author" content="Givology">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lessonstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <script src="script-lesson.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <!--- Header của trang -->
+    <header>
+        <div style="position: fixed; width: 100%; margin: 0; padding: 0; top: 0; z-index: 1;">
+            <nav class="topnav">
+                <div class="search-container" id="header">
+                    <form action="https://www.google.com/search" method="get">
+                        <input type="text" placeholder="Tìm kiếm.." name="q" value="">
+                        <button type="submit">
+                                <i class="fa fa-search"></i>
+                            </button>
+                    </form>
+                </div>
+                <a href="shop.html" id="header">Mua hàng</a>
+                <a class="active" href="lesson.html" id="header">Kiến thức</a>
+                <a href="activity.html" id="header">Hoạt động</a>
+                <a href="intro.html" id="header">Giới thiệu</a>
+                <a id="header" href="index.html">Trang chủ</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="carousel" data-carousel>
+            <div id="information" data-on>
+                <div class="information" data-actived>
+                    <h2>Tiêu đề 1</h2>
+                    <p>Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ cho in ấn. Lorem Ipsum đã được sử dụng như một văn bản chuẩn cho ngành công nghiệp in ấn từ những năm 1500, khi một họa sĩ vô danh
+                        ghép nhiều đoạn văn bản với nhau để tạo thành một bản mẫu văn bản. Đoạn văn bản này không những đã tồn tại năm thế kỉ, mà khi được áp dụng vào tin học văn phòng, nội dung của nó vẫn không hề bị thay đổi. Nó đã được phổ biến trong
+                        những năm 1960 nhờ việc bán những bản giấy Letraset in những đoạn Lorem Ipsum, và gần đây hơn, được sử dụng trong các ứng dụng dàn trang, như Aldus PageMaker.</p>
+                </div>
+                <div class="information">
+                    <h2> Tiêu đề 2</h2>
+                    <p>Trích đoạn chuẩn của Lorem Ipsum được sử dụng từ thế kỉ thứ 16 và được tái bản sau đó cho những người quan tâm đến nó. Đoạn 1.10.32 và 1.10.33 trong cuốn "De Finibus Bonorum et Malorum" của Cicero cũng được tái bản lại theo đúng cấu
+                        trúc gốc, kèm theo phiên bản tiếng Anh được dịch bởi H. Rackham vào năm 1914.</p>
+                </div>
+                <div class="information">
+                    <h2> Tiêu đề 3</h2>
+                    <p>Chúng ta vẫn biết rằng, làm việc với một đoạn văn bản dễ đọc và rõ nghĩa dễ gây rối trí và cản trở việc tập trung vào yếu tố trình bày văn bản. Lorem Ipsum có ưu điểm hơn so với đoạn văn bản chỉ gồm nội dung kiểu "Nội dung, nội dung,
+                        nội dung" là nó khiến văn bản giống thật hơn, bình thường hơn. Nhiều phần mềm thiết kế giao diện web và dàn trang ngày nay đã sử dụng Lorem Ipsum làm đoạn văn bản giả, và nếu bạn thử tìm các đoạn "Lorem ipsum" trên mạng thì sẽ
+                        khám phá ra nhiều trang web hiện vẫn đang trong quá trình xây dựng. Có nhiều phiên bản khác nhau đã xuất hiện, đôi khi do vô tình, nhiều khi do cố ý (xen thêm vào những câu hài hước hay thông tục).</p>
+                </div>
+            </div>
+            <button class="carousel-button prev" data-carousel-button="prev"><i class="fas fa-arrow-left"></i></button>
+            <button class="carousel-button next" data-carousel-button="next"><i class="fas fa-arrow-right"></i></button>
+
+            <section aria-label="Newest Photos">
+                <ul data-slides>
+                    <li class="slide" data-active><img src="Asset/img1.jpg" alt="img1"></li>
+                    <li class="slide"><img src="Asset/img2.jpg" alt="img2"></li>
+                    <li class="slide"><img src="Asset/img3.jpg" alt="img3"></li>
+                </ul>
+            </section>
+            <div class="carousel__nav" data-nav>
+                <button class="indicator" data-active><i class="fas fa-circle"></i></button>
+                <button class="indicator"><i class="fas fa-circle"></i></button>
+                <button class="indicator"><i class="fas fa-circle"></i></button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="threerow">
+            <div class="threecolumn">
+                <h3>Về Chúng Tôi</h3>
+                <p>Givology NKTP Hải Phòng là một nhóm học sinh trường THPT Chuyên Trần Phú được thành lập dưới sự bảo trợ của tổ chức tình nguyện Givology thành lập năm 2008 bởi các học sinh trường Đại học Pennysylvania, Mỹ.</p>
+            </div>
+            <div class="threecolumn">
+                <h3>Đường dẫn</h3>
+                <ul id="link">
+                    <li><a href="index.html">Trang Chủ</a></li>
+                    <li><a href="about.html">Giới thiệu</a></li>
+                    <li><a href="faq.html">Tài liệu</a></li>
+                </ul>
+            </div>
+            <div class="threecolumn">
+                <h3>Thông tin liên hệ</h3>
+                <ul class="info">
+                    <li>
+                        <span style="color: white; font-size: 30px; margin-left:6px"><i class="fa fa-map-marker"></i></span>
+                        <span style="margin-left: 6px">Trường THPT Chuyên Trần Phú</span>
+                    </li>
+                    <li>
+                        <span style="color: white; font-size: 30px;"><i class="fa fa-envelope"></i></span>
+                        <span style="margin-right: 5px;"><a id="email" href="#">givologyvietnam13@gmail.com</a></span>
+                    </li>
+                </ul>
+                <ul class="social-icon">
+                    <li>
+                        <a href="https://www.facebook.com/givologyvietnam13/">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/givologynktphaiphong.13/">
+                            <i class="fa fa-íntagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/user/givology">
+                            <i class="fa fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
